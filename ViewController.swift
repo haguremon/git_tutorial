@@ -16,13 +16,25 @@ class ViewController: UIViewController {
         return label
     }()
     
+    let label1: UILabel = {
+        let label = UILabel()
+        label.text = "git status"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(label)
+         let stackView = UIStackView(arrangedSubviews: [label,label1])
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackView)
         
-        [label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-         label.centerYAnchor.constraint(equalTo: view.centerYAnchor)].forEach { $0.isActive = true }
+        [stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+         stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)].forEach { $0.isActive = true }
         
         
         
