@@ -16,9 +16,17 @@ class ViewController: UIViewController {
         return label
     }()
     
-    let label1: UILabel = {
+    let statuslabel: UILabel = {
         let label = UILabel()
         label.text = "git status"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    //git diff
+    let gitdiffLabel: UILabel = {
+        let label = UILabel()
+        label.text = "git diff"
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -27,7 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         let stackView = UIStackView(arrangedSubviews: [label,label1])
+         let stackView = UIStackView(arrangedSubviews: [label,statuslabel,gitdiffLabel])
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
