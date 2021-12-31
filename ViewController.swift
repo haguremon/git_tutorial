@@ -3,7 +3,7 @@
 //  GitTutorial
 //
 //  Created by IwasakIYuta on 2021/12/30.
-//a
+//git commit
 
 import UIKit
 
