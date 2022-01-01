@@ -14,7 +14,8 @@ class OthersAddedViewController: UIViewController {
         super.viewDidLoad()
         
  print("git hubからadd fileした")
- print("git pull in terminal")     
+ print("git pull in terminal") 
+ print("git pull in Xcode")  
         
     }
 
