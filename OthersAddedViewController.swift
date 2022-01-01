@@ -1,3 +1,9 @@
+//
+//  OthersAddedViewController.swift
+//  GitTutorial
+//
+//  Created by Huguremon on 2022/1/1.
+//
 
 import UIKit
 
