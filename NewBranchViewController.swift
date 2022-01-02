@@ -6,3 +6,4 @@
 //
 
 import Foundation
+//枝分かれしてるのをマージさせる newbranchをmainに取り込む
