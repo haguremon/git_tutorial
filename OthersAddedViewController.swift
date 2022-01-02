@@ -15,7 +15,8 @@ class OthersAddedViewController: UIViewController {
         
  print("git hubからadd fileした")
  print("git pull in terminal") 
- print("git pull in Xcode")  
+ print("git pull in Xcode")
+ print("git merge (Fast Foward)") 
         
     }
 
