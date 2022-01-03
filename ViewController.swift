@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     let conflictmainbranchLabel: UILabel = {
         let label = UILabel()
-        label.text = "conflict"
+        label.text = "コンフリク解決させた！"
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
