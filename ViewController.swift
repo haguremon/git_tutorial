@@ -32,10 +32,18 @@ class ViewController: UIViewController {
         return label
     }()
     
+    let conflictmainbranchLabel: UILabel = {
+        let label = UILabel()
+        label.text = "コンフリク解決させた！"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         let stackView = UIStackView(arrangedSubviews: [label,statuslabel,gitdiffLabel])
+         let stackView = UIStackView(arrangedSubviews: [label,statuslabel,gitdiffLabel,conflictmainbranchLabel])
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
