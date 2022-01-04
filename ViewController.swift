@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let pullRequestLabel: UILabel = {
         let label = UILabel()
         label.text = "pullRequestをお願いします！"
@@ -47,10 +48,18 @@ class ViewController: UIViewController {
         return label
     }()
     
+    let gitHubFlowLabel: UILabel = {
+        let label = UILabel()
+        label.text = "gitHubFlowの流れをやる！"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         let stackView = UIStackView(arrangedSubviews: [label,statuslabel,gitdiffLabel,conflictmainbranchLabel,pullRequestLabel])
+         let stackView = UIStackView(arrangedSubviews: [label,statuslabel,gitdiffLabel,conflictmainbranchLabel,pullRequestLabel,gitHubFlowLabel])
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
