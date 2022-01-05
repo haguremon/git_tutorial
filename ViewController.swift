@@ -56,10 +56,18 @@ class ViewController: UIViewController {
         return label
     }()
     
+    let gitstashLabel: UILabel = {
+        let label = UILabel()
+        label.text = "gitstashを使って一時避難"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         let stackView = UIStackView(arrangedSubviews: [label,statuslabel,gitdiffLabel,conflictmainbranchLabel,pullRequestLabel,gitHubFlowLabel])
+         let stackView = UIStackView(arrangedSubviews: [label,statuslabel,gitdiffLabel,conflictmainbranchLabel,pullRequestLabel,gitHubFlowLabel,gitstashLabel])
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
